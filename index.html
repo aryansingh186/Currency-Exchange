@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.7.0/css/flag-icons.min.css">
+
+</head>
+
+<body>
+    <!-- Header Container -->
+    <div class="top-bar">
+        <div class="Logo">
+            <a href="">Exchange</a>
+        </div>
+        <div class="login-system">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </div>
+
+    <div class="Header">
+        <h1>Global currency conversions & money transfers</h1>
+        <p id="header_p">Leading the world in currency information and global transfers for 30+ years</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <!-- Amount given -->
+        <div class="amount">
+            <p>Amount</p>
+            <div class="input-box">
+                <input type="number" id="amount1" placeholder="Enter Your Amount">
+
+                <select id="fromCurrency" class="flag">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+        </div>
+        <!-- img converter  -->
+         <a href="#"><img src="img/arrow-goes-top-bottom-icon.png" id="iconImg"></a>
+
+        <!-- Converted To -->
+        <div class="amount2">
+            <p>Converted To</p>
+            <div class="input-box">
+                <input type="number" id="amount2" placeholder="Converted Amount" readonly>
+
+                <select id="toCurrency" class="flag">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
